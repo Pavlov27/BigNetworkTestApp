@@ -13,6 +13,11 @@
 		8FFD8D0024FBBA5400741BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD8CFE24FBBA5400741BFD /* Main.storyboard */; };
 		8FFD8D0224FBBA5600741BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD8D0124FBBA5600741BFD /* Assets.xcassets */; };
 		8FFD8D0524FBBA5600741BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD8D0324FBBA5600741BFD /* LaunchScreen.storyboard */; };
+		8FFD8D0E24FBC03A00741BFD /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD8D0D24FBC03A00741BFD /* MainTableViewCell.swift */; };
+		8FFD8D1024FBC04C00741BFD /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD8D0F24FBC04C00741BFD /* MainTableViewCell.xib */; };
+		8FFD8D1424FBE2B400741BFD /* LoadImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD8D1324FBE2B400741BFD /* LoadImageController.swift */; };
+		8FFD8D1624FC16CD00741BFD /* LoadingImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD8D1524FC16CD00741BFD /* LoadingImageViewModel.swift */; };
+		8FFD8D1924FC188500741BFD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD8D1824FC188500741BFD /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		8FFD8D0124FBBA5600741BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FFD8D0424FBBA5600741BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FFD8D0624FBBA5600741BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FFD8D0D24FBC03A00741BFD /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		8FFD8D0F24FBC04C00741BFD /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		8FFD8D1324FBE2B400741BFD /* LoadImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageController.swift; sourceTree = "<group>"; };
+		8FFD8D1524FC16CD00741BFD /* LoadingImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingImageViewModel.swift; sourceTree = "<group>"; };
+		8FFD8D1824FC188500741BFD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		8FFD8CF724FBBA5400741BFD /* BigNetworkTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				8FFD8CF824FBBA5400741BFD /* AppDelegate.swift */,
-				8FFD8CFA24FBBA5400741BFD /* SceneDelegate.swift */,
+				8FFD8D0C24FBC00100741BFD /* Main Table View */,
+				8FFD8D1724FC186800741BFD /* NetworkManager */,
+				8FFD8D1124FBDE9100741BFD /* App */,
+			);
+			path = BigNetworkTestApp;
+			sourceTree = "<group>";
+		};
+		8FFD8D0C24FBC00100741BFD /* Main Table View */ = {
+			isa = PBXGroup;
+			children = (
 				8FFD8CFC24FBBA5400741BFD /* ViewController.swift */,
 				8FFD8CFE24FBBA5400741BFD /* Main.storyboard */,
+				8FFD8D0D24FBC03A00741BFD /* MainTableViewCell.swift */,
+				8FFD8D0F24FBC04C00741BFD /* MainTableViewCell.xib */,
+				8FFD8D1224FBE28C00741BFD /* LoadImageController */,
+			);
+			path = "Main Table View";
+			sourceTree = "<group>";
+		};
+		8FFD8D1124FBDE9100741BFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD8CF824FBBA5400741BFD /* AppDelegate.swift */,
+				8FFD8CFA24FBBA5400741BFD /* SceneDelegate.swift */,
 				8FFD8D0124FBBA5600741BFD /* Assets.xcassets */,
 				8FFD8D0324FBBA5600741BFD /* LaunchScreen.storyboard */,
 				8FFD8D0624FBBA5600741BFD /* Info.plist */,
 			);
-			path = BigNetworkTestApp;
+			path = App;
+			sourceTree = "<group>";
+		};
+		8FFD8D1224FBE28C00741BFD /* LoadImageController */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD8D1324FBE2B400741BFD /* LoadImageController.swift */,
+				8FFD8D1524FC16CD00741BFD /* LoadingImageViewModel.swift */,
+			);
+			path = LoadImageController;
+			sourceTree = "<group>";
+		};
+		8FFD8D1724FC186800741BFD /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD8D1824FC188500741BFD /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +174,7 @@
 			files = (
 				8FFD8D0524FBBA5600741BFD /* LaunchScreen.storyboard in Resources */,
 				8FFD8D0224FBBA5600741BFD /* Assets.xcassets in Resources */,
+				8FFD8D1024FBC04C00741BFD /* MainTableViewCell.xib in Resources */,
 				8FFD8D0024FBBA5400741BFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFD8D1424FBE2B400741BFD /* LoadImageController.swift in Sources */,
 				8FFD8CFD24FBBA5400741BFD /* ViewController.swift in Sources */,
 				8FFD8CF924FBBA5400741BFD /* AppDelegate.swift in Sources */,
+				8FFD8D1924FC188500741BFD /* NetworkManager.swift in Sources */,
+				8FFD8D1624FC16CD00741BFD /* LoadingImageViewModel.swift in Sources */,
+				8FFD8D0E24FBC03A00741BFD /* MainTableViewCell.swift in Sources */,
 				8FFD8CFB24FBBA5400741BFD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKBXS9NLBT;
-				INFOPLIST_FILE = BigNetworkTestApp/Info.plist;
+				INFOPLIST_FILE = BigNetworkTestApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKBXS9NLBT;
-				INFOPLIST_FILE = BigNetworkTestApp/Info.plist;
+				INFOPLIST_FILE = BigNetworkTestApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
